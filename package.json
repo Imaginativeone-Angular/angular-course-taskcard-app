@@ -30,5 +30,11 @@
         "rxjs": "5.0.0-rc-1",
         "systemjs": "0.19.40",
         "zone.js": "0.6.26"
+    },
+    "devDependencies": {
+        "@types/core-js": "0.9.34",
+        "@types/node": "6.0.46",
+        "concurrently": "3.1.0",
+        "lite-server": ""
     }
 }
