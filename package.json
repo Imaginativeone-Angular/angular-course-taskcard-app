@@ -1,5 +1,11 @@
 {
     "name": "angular2-skeleton",
     "version": "1.0.0",
-    "description": "Doug's Angular2 Skeleton"
+    "description": "Doug's Angular2 Skeleton",
+    "scripts": {
+        "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+        "lite": "lite-server",
+        "tsc": "tsc",
+        "tsc:w": "tst -w"
+    }
 }
