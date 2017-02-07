@@ -8,5 +8,9 @@
         "tsc": "tsc",
         "tsc:w": "tst -w"
     },
-    "license": "UNLICENSED"
+    "license": "UNLICENSED",
+    "repository": {
+        "type": "git",
+        "url": ""
+    }
 }
