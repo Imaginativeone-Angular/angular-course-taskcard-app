@@ -7,5 +7,6 @@
         "lite": "lite-server",
         "tsc": "tsc",
         "tsc:w": "tst -w"
-    }
+    },
+    "license": "UNLICENSED"
 }
