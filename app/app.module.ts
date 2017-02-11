@@ -7,10 +7,10 @@ import { AppComponent } from './app.component'; // Same folder as the Root Modul
 
 // Decorator - takes the instance of the Service, Directive, etc
 // and modifies it in some way before it is used
-@NgModule {
+@NgModule ({
     imports:      [ BrowserModule ],
     declarations: [ AppComponent ],
     bootstrap:    [ AppComponent ]
-}
+})
 
 export class AppModule { }
