@@ -1,3 +1,5 @@
+// Generic change to this file in order to see it on GitHub
+
 // Provides the ability to utilize Modules
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
