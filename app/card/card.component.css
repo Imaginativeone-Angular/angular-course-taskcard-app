@@ -1,0 +1,12 @@
+/* External stylesheet for our CardComponent */
+.card {
+    border-radius: 0;
+}
+.card,
+.card-footer {
+    background-color: #FFFFA5;
+    border: none;
+}
+.card-footer {
+    text-align: right;
+}
