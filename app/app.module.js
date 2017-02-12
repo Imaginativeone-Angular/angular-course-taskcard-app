@@ -14,16 +14,18 @@ var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 // Import the Root Component
 var app_component_1 = require('./app.component'); // Same folder as the Root Module
+var card_component_1 = require('./card/card.component'); // also declare this
 // Decorator - takes the instance of the Service, Directive, etc
 // and modifies it in some way before it is used
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
-        // Same folder as the Root Module
+        // also declare this
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule],
-            declarations: [app_component_1.AppComponent],
+            declarations: [app_component_1.AppComponent,
+                card_component_1.CardComponent],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

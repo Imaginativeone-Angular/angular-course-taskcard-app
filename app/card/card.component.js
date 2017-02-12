@@ -9,20 +9,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var CardComponent = (function () {
+    function CardComponent() {
     }
-    AppComponent = __decorate([
+    CardComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'my-app',
-            // template: '<h1>Task Card App</h1>'
-            templateUrl: 'app.component.html'
+            // specify "selector"
+            selector: 'app-card',
+            // template (html element)
+            // Inline templates? No IDE Help
+            // template: '<h1></h1>'
+            // We need the path to the template file, the paths are relative to the ROOT of the project, not based
+            //   on where the current file resides.
+            // templateUrl: './card.component.html'
+            templateUrl: 'card.component.html',
+            // Very rarely use an inline styleSheet
+            // You can have multiple styleSheets for each Component
+            styleUrls: ['card.component.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], CardComponent);
+    return CardComponent;
 }());
-exports.AppComponent = AppComponent;
-// When you import this into the Root Module... 
-//# sourceMappingURL=app.component.js.map
+exports.CardComponent = CardComponent;
+// We now need to add this CardComponent into our Root Module
+// app.module.ts 
+//# sourceMappingURL=card.component.js.map
