@@ -7,11 +7,14 @@ import { BrowserModule } from '@angular/platform-browser';
 // Import the Root Component
 import { AppComponent } from './app.component'; // Same folder as the Root Module
 
+import { CardComponent } from './card/card.component'; // also declare this
+
 // Decorator - takes the instance of the Service, Directive, etc
 // and modifies it in some way before it is used
 @NgModule ({
     imports:      [ BrowserModule ],
-    declarations: [ AppComponent ],
+    declarations: [ AppComponent, 
+                    CardComponent ], // html for this Component is next
     bootstrap:    [ AppComponent ]
 })
 
