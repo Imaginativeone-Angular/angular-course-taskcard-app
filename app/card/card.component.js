@@ -9,23 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var core_2 = require('@angular/core');
+var task_1 = require('../model/task'); // Import the Task Class Module
 var CardComponent = (function () {
     function CardComponent() {
     }
+    __decorate([
+        core_2.Input(), 
+        __metadata('design:type', task_1.Task)
+    ], CardComponent.prototype, "task", void 0);
     CardComponent = __decorate([
+        // Import the Task Class Module
         core_1.Component({
             moduleId: module.id,
-            // specify "selector"
             selector: 'app-card',
-            // template (html element)
-            // Inline templates? No IDE Help
-            // template: '<h1></h1>'
-            // We need the path to the template file, the paths are relative to the ROOT of the project, not based
-            //   on where the current file resides.
-            // templateUrl: './card.component.html'
             templateUrl: 'card.component.html',
-            // Very rarely use an inline styleSheet
-            // You can have multiple styleSheets for each Component
             styleUrls: ['card.component.css']
         }), 
         __metadata('design:paramtypes', [])
@@ -33,6 +31,4 @@ var CardComponent = (function () {
     return CardComponent;
 }());
 exports.CardComponent = CardComponent;
-// We now need to add this CardComponent into our Root Module
-// app.module.ts 
 //# sourceMappingURL=card.component.js.map
